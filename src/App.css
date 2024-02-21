@@ -1,5 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Satoshi-Black";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: "Satoshi-Black";
+}
+
 .App {
-  /* Add styles for the main app container if needed */
+  background-color: black;
 }
 
 .header-logo {
@@ -27,16 +39,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   display: flex;
   flex-direction: row; /* Changed from column to row */
   align-items: center;
   justify-content: space-between; /* Ensures logo and text are on opposite ends */
   padding: 5px; /* Added padding for some spacing around the contents */
   font-size: calc(7px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
