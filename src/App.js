@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="header-logo" alt="logo" />
+          <Link to='App'><img src={logo} className="header-logo" alt="logo" /></Link>
           <div className="header-text">
             <Link to="/startups" className="header-link">Startups</Link>
             <Link to="/members" className="header-link">Members</Link>
