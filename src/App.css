@@ -1,9 +1,18 @@
 .App {
-  text-align: center;
+  /* Add styles for the main app container if needed */
 }
 
-.top {
-  text-align: center;
+.header-logo {
+  height: 75px;
+  width: auto;
+  align-content: center;
+}
+
+.header-text {
+  padding-right: 15px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .App-logo {
@@ -19,11 +28,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Changed from column to row */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Ensures logo and text are on opposite ends */
+  padding: 15px; /* Added padding for some spacing around the contents */
   font-size: calc(10px + 2vmin);
   color: white;
 }
