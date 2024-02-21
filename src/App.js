@@ -16,7 +16,7 @@ function App() {
           <div className="header-text">
             <Link to="/startups" className="header-link">Startups</Link>
             <Link to="/members" className="header-link">Members</Link>
-            <Link to="/founders_education" className="header-link">FoundersEducation</Link>
+            <Link to="/founders_education" className="header-link">Founder's Education</Link>
           </div>
         </header>
 
