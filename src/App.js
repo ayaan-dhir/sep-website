@@ -28,7 +28,7 @@ function App() {
           <Route path="/" element={
             <div className="app-container">
               <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-              <TypingEffect messages={["Build.", "Network.", "Scale"]} color="#F0544F" size="50px" cursorSize="20px" />
+              <TypingEffect messages={["Build.", "Connect.", "Scale"]} color="#F0544F" size="50px" cursorSize="20px" />
             </div>
           } />
           {/* Other routes */}

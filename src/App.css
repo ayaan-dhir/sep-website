@@ -37,6 +37,7 @@ code {
   color: #FFFFFF;
   font-size: 100px;
   font-family: "Satoshi-Black", sans-serif;
+  padding-top: 10%;
   /* Include any other styles you want, such as font-weight, line-height, etc. */
 }
 
@@ -59,7 +60,7 @@ code {
   flex-direction: row; /* Changed from column to row */
   align-items: center;
   justify-content: space-between; /* Ensures logo and text are on opposite ends */
-  padding: 5px; /* Added padding for some spacing around the contents */
+  padding: 5px;
   font-size: calc(7px + 2vmin);
 }
 
