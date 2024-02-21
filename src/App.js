@@ -6,8 +6,9 @@ import './fonts.css';
 import Members from './pages/members';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
-import TypingEffect from './Typing';
-import './Typing.module.css'
+// import TypingEffect from './Typing';
+// import './Typing.module.css'
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
@@ -28,7 +29,17 @@ function App() {
           <Route path="/" element={
             <div className="app-container">
               <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-              <TypingEffect messages={["Build.", "Connect.", "Scale"]} color="#F0544F" size="50px" cursorSize="20px" />
+              <Typewriter
+                options={{
+                  strings: ["Build.", "Connect.", "Launch."],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 60,
+                  pauseFor: 1500,
+                }}
+              />
+
+              {/* <TypingEffect messages={["Build.", "Connect.", "Scale."]} color="#F0544F" size="50px" cursorSize="10px" /> */}
             </div>
           } />
           {/* Other routes */}
