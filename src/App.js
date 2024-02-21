@@ -6,6 +6,7 @@ import './fonts.css'
 import Members from './pages/members';
 import Startups from './pages/startups'
 import FoundersEducation from './pages/founders_education'
+import TypingEffect from './Typing';
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
             <Link to="/founders_education" className="header-link">Founder's Education</Link>
           </div>
         </header>
-
+      <header>
+        <TypingEffect message="Sigma Eta Pi" color="#FFFFFF" size="100px" /> {/* Example with a custom size */}
+      </header>
+      <header>
+        <TypingEffect message="Welcome to Sigma Eta Pi" color="#FFFFFF" size="100px" /> {/* Example with a custom size */}
+      </header>
 
         <Routes>
             <Route path="/startups" element={<Startups />} />
@@ -30,5 +36,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
