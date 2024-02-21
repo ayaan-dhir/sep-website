@@ -7,6 +7,7 @@ import Members from './pages/members';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
 import TypingEffect from './Typing';
+import './Typing.module.css'
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/" element={
             <div className="app-container">
               <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-              <TypingEffect messages={["Work Hard", "Play Hard"]} color="#FFFFFF" size="24px" cursorSize="24px" />
+              <TypingEffect messages={["Build.", "Network.", "Scale"]} color="#F0544F" size="50px" cursorSize="20px" />
             </div>
           } />
           {/* Other routes */}
