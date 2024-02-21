@@ -33,6 +33,21 @@ code {
   color: white;
 }
 
+.sigma-eta-pi-center {
+  color: #FFFFFF;
+  font-size: 100px;
+  font-family: "Satoshi-Black", sans-serif;
+  /* Include any other styles you want, such as font-weight, line-height, etc. */
+}
+
+.App {
+  text-align: center;
+  /* Ensure the .App fills the entire height and is a flex container */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -47,3 +62,4 @@ code {
   padding: 5px; /* Added padding for some spacing around the contents */
   font-size: calc(7px + 2vmin);
 }
+
