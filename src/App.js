@@ -6,8 +6,6 @@ import './fonts.css';
 import Members from './pages/members';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
-// import TypingEffect from './Typing';
-// import './Typing.module.css'
 import Typewriter from "typewriter-effect";
 
 function App() {
@@ -22,14 +20,14 @@ function App() {
             <Link to="/founders_education" className="header-link">Founder's Education</Link>
           </div>
         </header>
-        
+
         {/* Routes for different pages */}
         <Routes>
           {/* Define the root path which renders the main content */}
           <Route path="/" element={
             <div className="app-container">
               <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-              <Typewriter
+              <h1 className="typing-effect"><Typewriter
                 options={{
                   strings: ["Build.", "Connect.", "Launch."],
                   autoStart: true,
@@ -37,9 +35,7 @@ function App() {
                   deleteSpeed: 60,
                   pauseFor: 1500,
                 }}
-              />
-
-              {/* <TypingEffect messages={["Build.", "Connect.", "Scale."]} color="#F0544F" size="50px" cursorSize="10px" /> */}
+              /></h1>
             </div>
           } />
           {/* Other routes */}

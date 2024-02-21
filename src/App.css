@@ -42,8 +42,9 @@ code {
   /* Include any other styles you want, such as font-weight, line-height, etc. */
 }
 
-.title-subtext {
-  font-size: 12pt;
+.typing-effect {
+  font-size: 40pt;
+  color: #F0544F;
 }
 
 .App {
