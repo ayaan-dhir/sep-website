@@ -1,7 +1,7 @@
 /* board.css */
 
 
-.members-grid {
+.board-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
     gap: 200px; /*between photos left and right*/
@@ -9,25 +9,25 @@
     padding: 100px 150px; /*top and bottom respectively*/
   }
   
-  .member-item {
+  .board-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .member-photo {
+  .board-photo {
     width: 300px; /* Adjust width as needed */
     height: 400px; /* Adjust height as needed */
     object-fit: cover; /* Ensures photos cover the area well */
   }
   
-  .member-name {
+  .board-name {
     font-family: "Satoshi-Light";
     font-size: 18pt;
     margin-top: 5px;
   }
 
-  .member-position {
+  .board-position {
     font-family: "Satoshi-Black";
     font-size: 18pt;
     margin-top: 5px;

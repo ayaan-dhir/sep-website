@@ -1,53 +1,91 @@
 import React from 'react';
 import './classes.css'
-import ayaan from './members/ayaan.jpg'
-import byren from './members/byren.jpg'
-import danielyi from './members/daniel.jpg'
-import michelle from './members/michelle.jpg'
-import shreya from './members/shreya.jpg'
-import rithwik from './members/rithwik.jpg'
+import antonio from './members/epsilon/antonio.JPG'
+import ariel from './members/epsilon/ariel.JPG'
+import ariya from './members/epsilon/ariya.JPG'
+import caleb from './members/epsilon/caleb.JPG'
+import delphine from './members/epsilon/delphine.JPG'
+import elisa from './members/epsilon/elisa.JPG'
+import felix from './members/epsilon/felix.JPG'
+import jessicahu from './members/epsilon/jessicahu.JPG'
+import jessicatam from './members/epsilon/jessicatam.JPG'
+import joseph from './members/epsilon/joseph.JPG'
+import pahel from './members/epsilon/pahel.JPG'
+import samantha from './members/epsilon/samantha.JPG'
+
 
 const membersData = [
-    {
-      id: 1,
-      position: 'President',
-      name: 'Shreya Mawandia',
-      photo: shreya
-    },
-    {
-      id: 2,
-      position: 'VP of External Affairs',
-      name: 'Byren Cheema',
-      photo: byren
-    },
+  {
+    id: 1,
+    name: 'Antonio Li',
+    photo: antonio
+  },
 
-    {
-      id: 3,
-      position: 'VP of Internal Affairs',
-      name: 'Daniel Yi',
-      photo: danielyi
-    },
-    
-    {
-      id: 4,
-      position: 'VP of Marketing',
-      name: 'Michelle Lei',
-      photo: michelle
-    },
+  {
+    id: 2,
+    name: 'Ariel Tjandra',
+    photo: ariel
+  },
 
-    {
-      id: 5,
-      position: 'VP of Finance',
-      name: 'Rithwik Kerur',
-      photo: rithwik
-    },
+  {
+    id: 3,
+    name: 'Ariya Gowda',
+    photo: ariya
+  },
 
-    {
-      id: 6,
-      position: 'VP of Founder\'s Education',
-      name: 'Ayaan Dhir',
-      photo: ayaan
-    },
+  {
+    id: 4,
+    name: 'Caleb Chung',
+    photo: caleb
+  },
+
+  {
+    id: 5,
+    name: 'Delphine Tai-Beauchamp',
+    photo: delphine
+  },
+
+  {
+    id: 6,
+    name: 'Elisa Yan',
+    photo: elisa
+  },
+
+  {
+    id: 7,
+    name: 'Felix Toffaneto-Werner',
+    photo: felix
+  },
+
+  {
+    id: 8,
+    name: 'Jessica Hu',
+    photo: jessicahu
+  },
+
+  {
+    id: 9,
+    name: 'Jessica Tam',
+    photo: jessicatam
+  },
+
+  {
+    id: 10,
+    name: 'Joseph Marquez',
+    photo: joseph
+  },
+
+  {
+    id: 11,
+    name: 'Pahel Srivastava',
+    photo: pahel
+  },
+
+  {
+    id: 12,
+    name: 'Samantha Gibbons',
+    photo: samantha
+  },
 
   ];
 
@@ -56,12 +94,11 @@ function Members() {
     <div>
       <h1 className='classes-title'>Classes</h1>
       <h2 className='classes'>Epsilon</h2>
-      <div className="members-grid">
+      <div className="classes-grid">
         {membersData.map((member) => (
-          <div key={member.id} className="member-item">
-            <img src={member.photo} alt={member.name} className="member-photo" />
-            <div className="member-position">{member.position}</div>
-            <div className="member-name">{member.name}</div>
+          <div key={member.id} className="classes-item">
+            <img src={member.photo} alt={member.name} className="classes-photo" />
+            <div className="classes-name">{member.name}</div>
           </div>
         ))}
       </div>

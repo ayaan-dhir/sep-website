@@ -1,42 +1,47 @@
 /* classes.css */
 
-
-.members-grid {
+.classes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
-    gap: 200px; /*between photos left and right*/
-    row-gap: 100px; /*between rows*/
+    gap: 200px;
+    row-gap: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
   }
   
-  .member-item {
+  .classes-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .member-photo {
+  .classes-photo {
     width: 300px; /* Adjust width as needed */
     height: 400px; /* Adjust height as needed */
     object-fit: cover; /* Ensures photos cover the area well */
   }
   
-  .member-name {
+  .classes-name {
     font-family: "Satoshi-Light";
-    font-size: 18pt;
+    font-size: 20pt;
     margin-top: 5px;
+    margin-bottom: 5px;
   }
 
-  .member-position {
+  .classes-position {
     font-family: "Satoshi-Black";
     font-size: 18pt;
     margin-top: 5px;
   }
 
   .classes-title {
-    font-size: 48pt;
+    font-size: 56pt;
+    padding-bottom: 25px;
   }
 
   .classes {
-    font-size: 40pt;
+    color: #F06141;
+    font-size: 45pt;
     text-align: center;
   }

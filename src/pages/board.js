@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './board.css'
-import ayaan from './members/ayaan.jpg'
-import byren from './members/byren.jpg'
-import danielyi from './members/daniel.jpg'
-import michelle from './members/michelle.jpg'
-import shreya from './members/shreya.jpg'
-import rithwik from './members/rithwik.jpg'
+import ayaan from './members/board/ayaan.jpg'
+import byren from './members/board/byren.jpg'
+import danielyi from './members/board/daniel.jpg'
+import michelle from './members/board/michelle.jpg'
+import shreya from './members/board/shreya.jpg'
+import rithwik from './members/board/rithwik.jpg'
 
 const membersData = [
     {
@@ -55,12 +55,12 @@ function Members() {
   return (
     <div>
       <h1 className='board-title'>Board</h1>
-      <div className="members-grid">
+      <div className="board-grid">
         {membersData.map((member) => (
-          <div key={member.id} className="member-item">
-            <img src={member.photo} alt={member.name} className="member-photo" />
-            <div className="member-position">{member.position}</div>
-            <div className="member-name">{member.name}</div>
+          <div key={member.id} className="board-item">
+            <img src={member.photo} alt={member.name} className="board-photo" />
+            <div className="board-position">{member.position}</div>
+            <div className="board-name">{member.name}</div>
           </div>
         ))}
       </div>
