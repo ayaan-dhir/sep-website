@@ -64,6 +64,7 @@ function Members() {
           </div>
         ))}
       </div>
+      <div className="page-spacer"><h2 className='footer'>Sigma Eta Pi at UCI 2024</h2></div>
     </div>
   );
 }
