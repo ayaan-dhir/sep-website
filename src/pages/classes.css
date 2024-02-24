@@ -6,7 +6,6 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
     gap: 200px; /*between photos left and right*/
     row-gap: 100px; /*between rows*/
-    padding: 100px 150px; /*top and bottom respectively*/
   }
   
   .member-item {
@@ -35,4 +34,9 @@
 
   .classes-title {
     font-size: 48pt;
+  }
+
+  .classes {
+    font-size: 40pt;
+    text-align: center;
   }

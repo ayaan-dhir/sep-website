@@ -55,6 +55,7 @@ function Members() {
   return (
     <div>
       <h1 className='classes-title'>Classes</h1>
+      <h2 className='classes'>Epsilon</h2>
       <div className="members-grid">
         {membersData.map((member) => (
           <div key={member.id} className="member-item">
