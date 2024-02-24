@@ -1,5 +1,5 @@
 import React from 'react';
-import './board.css'
+import './classes.css'
 import ayaan from './members/ayaan.jpg'
 import byren from './members/byren.jpg'
 import danielyi from './members/daniel.jpg'
@@ -54,7 +54,7 @@ const membersData = [
 function Members() {
   return (
     <div>
-      <h1>Members Page</h1>
+      <h1 className='classes-title'>Classes</h1>
       <div className="members-grid">
         {membersData.map((member) => (
           <div key={member.id} className="member-item">

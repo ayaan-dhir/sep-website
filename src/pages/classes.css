@@ -1,4 +1,4 @@
-/* members.css */
+/* classes.css */
 
 
 .members-grid {
@@ -31,4 +31,8 @@
     font-family: "Satoshi-Black";
     font-size: 18pt;
     margin-top: 5px;
+  }
+
+  .classes-title {
+    font-size: 48pt;
   }

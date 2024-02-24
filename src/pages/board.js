@@ -54,7 +54,7 @@ const membersData = [
 function Members() {
   return (
     <div>
-      <h1>Members Page</h1>
+      <h1 className='board-title'>Board</h1>
       <div className="members-grid">
         {membersData.map((member) => (
           <div key={member.id} className="member-item">

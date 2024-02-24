@@ -4,13 +4,13 @@ import logo from './white-logo.png';
 import './App.css';
 import './fonts.css';
 import Board from './pages/board';
-import Members from './pages/members';
+import Classes from './pages/classes';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
 import Typewriter from "typewriter-effect";
 
 function App() {
-  
+
   return (
     <Router>
       <div className="App">
@@ -22,7 +22,7 @@ function App() {
               <div>Members</div> {/* Hover target */}
               <div className="dropdown-content"> {/* Dropdown content */}
                 <Link to="board" className="dropdown-item">Board</Link>
-                <Link to="members" className="dropdown-item">Members</Link>
+                <Link to="classes" className="dropdown-item">Classes</Link>
               </div>
             </div>
             <Link to="founders_education" className="header-link">Founder's Education</Link>
@@ -51,7 +51,7 @@ function App() {
           <Route path="/startups" element={<Startups />} />
           {/* Update the paths as necessary */}
           <Route path="board" element={<Board />} />
-          <Route path="members" element={<Members />} />
+          <Route path="classes" element={<Classes />} />
           <Route path="founders_education" element={<FoundersEducation />} />
         </Routes>
       </div>
