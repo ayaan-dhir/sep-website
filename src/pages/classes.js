@@ -1,5 +1,7 @@
 import React from 'react';
 import './classes.css'
+
+// Epsilon
 import antonio from './members/epsilon/antonio.JPG'
 import ariel from './members/epsilon/ariel.JPG'
 import ariya from './members/epsilon/ariya.JPG'
@@ -13,6 +15,7 @@ import joseph from './members/epsilon/joseph.JPG'
 import pahel from './members/epsilon/pahel.JPG'
 import samantha from './members/epsilon/samantha.JPG'
 
+// Delta
 import byren from './members/delta/byren.jpg'
 import clare from './members/delta/clare.JPG'
 import daniel from './members/delta/daniel.jpg'
@@ -146,7 +149,7 @@ const epsilonData = [
       photo: vishwa
     },
   
-    ];
+  ];
 
 function Members() {
   return (

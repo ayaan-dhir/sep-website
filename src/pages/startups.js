@@ -1,11 +1,15 @@
 import React from 'react';
+import './startups.css'
 
 function Startups() {
   return (
-    <div>
-      <h1>Startups Page</h1>
-      <p>This page contains all the startups built within Sigma Eta Pi.</p>
+    <div className="app-container">
+    <div className="centered-content">
+      <h1 className="sigma-eta-pi-center">Startups</h1>
+      <h1 className="typing-effect">
+      </h1>
     </div>
+  </div>
   );
 }
 
