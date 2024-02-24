@@ -25,6 +25,40 @@ import michelle from './members/delta/michelle.jpg'
 import shreya from './members/delta/shreya.jpg'
 import vishwa from './members/delta/vishwa.JPG'
 
+// Gamma 
+import ashley from './members/gamma/ashley.jpg'
+import kanu from './members/gamma/kanu.jpg'
+import kyletran from './members/gamma/kyletran.jpg'
+import kylettran from './members/gamma/kylettran.png'
+import redford from './members/gamma/redford.JPG'
+import rithwik from './members/gamma/rithwik.jpg'
+import rod from './members/gamma/rod.png'
+import zak from './members/gamma/zak.jpg'
+
+// Beta
+import chris from './members/beta/chris.jpg'
+import inika from './members/beta/inika.jpg'
+import jareice from './members/beta/jareice.jpg'
+import nima from './members/beta/nima.jpg'
+import romeo from './members/beta/romeo.jpg'
+import saher from './members/beta/saher.jpg'
+import shivam from './members/beta/shivam.jpg'
+
+// Alpha
+import alexia from './members/alpha/alexia.png'
+import ayaan from './members/alpha/ayaan.jpg'
+import isaac from './members/alpha/isaac.png'
+import michael from './members/alpha/michael.jpg'
+import rosario from './members/alpha/rosario.jpg'
+import ruby from './members/alpha/ruby.png'
+
+// Founding
+import danielvega from './members/founding/danielvega.jpg'
+import marc from './members/founding/marc.JPG'
+import nikesh from './members/founding/nikesh.jpg'
+import nolan from './members/founding/nolan.jpg'
+import stefani from './members/founding/stefani.JPG'
+
 const epsilonData = [
   {
     id: 1,
@@ -100,7 +134,7 @@ const epsilonData = [
 
   ];
 
-  const deltaData = [
+const deltaData = [
     {
       id: 1,
       name: 'Byren Cheema',
@@ -151,6 +185,175 @@ const epsilonData = [
   
   ];
 
+const gammaData = [
+    {
+      id: 1,
+      name: 'Ashley Herrarte',
+      photo: ashley
+    },
+  
+    {
+      id: 2,
+      name: 'Kanu Chandra',
+      photo: kanu
+    },
+  
+    {
+      id: 3,
+      name: 'Kyle Tran',
+      photo: kyletran
+    },
+  
+    {
+      id: 4,
+      name: 'Kyle T. Tran',
+      photo: kylettran
+    },
+  
+    {
+      id: 5,
+      name: 'Redford Hudson',
+      photo: redford
+    },
+  
+    {
+      id: 6,
+      name: 'Rithwik Kerur',
+      photo: rithwik
+    },
+  
+    {
+      id: 7,
+      name: 'Roderick Mendenhall',
+      photo: rod
+    },
+  
+    {
+      id: 8,
+      name: 'Zakariya Hussain',
+      photo: zak
+    },
+  
+  ];
+
+const betaData = [
+    {
+      id: 1,
+      name: 'Christopher Kwan',
+      photo: chris
+    },
+  
+    {
+      id: 2,
+      name: 'Inika Meha',
+      photo: inika
+    },
+  
+    {
+      id: 3,
+      name: 'Jareice Graham',
+      photo: jareice
+    },
+  
+    {
+      id: 4,
+      name: 'Nima Movahedi',
+      photo: nima
+    },
+  
+    {
+      id: 5,
+      name: 'Romeo Azizian',
+      photo: romeo
+    },
+  
+    {
+      id: 6,
+      name: 'Saher Noor',
+      photo: saher
+    },
+  
+    {
+      id: 7,
+      name: 'Shivam Shah',
+      photo: shivam
+    },
+
+  
+  ];
+
+const alphaData = [
+    {
+      id: 1,
+      name: 'Alexia Rudh',
+      photo: alexia
+    },
+  
+    {
+      id: 2,
+      name: 'Ayaan Dhir',
+      photo: ayaan
+    },
+  
+    {
+      id: 3,
+      name: 'Isaac Larroque',
+      photo: isaac
+    },
+  
+    {
+      id: 4,
+      name: 'Michael Ross',
+      photo: michael
+    },
+  
+    {
+      id: 5,
+      name: 'Rosario Pozos',
+      photo: rosario
+    },
+  
+    {
+      id: 6,
+      name: 'Ruby Mejia-Perez',
+      photo: ruby
+    },
+  
+  ];
+
+const foundingData = [
+    {
+      id: 1,
+      name: 'Daniel Vega',
+      photo: danielvega
+    },
+  
+    {
+      id: 2,
+      name: 'Marc Villafuerte',
+      photo: marc
+    },
+  
+    {
+      id: 3,
+      name: 'Nikesh Poudel',
+      photo: nikesh
+    },
+  
+    {
+      id: 4,
+      name: 'Nolan Carroll',
+      photo: nolan
+    },
+  
+    {
+      id: 5,
+      name: 'Stefani Rios',
+      photo: stefani
+    },
+  
+  ];
+
 function Members() {
   return (
     <div>
@@ -167,6 +370,42 @@ function Members() {
       <h2 className='classes'>Delta</h2>
       <div className="classes-grid">
         {deltaData.map((member) => (
+          <div key={member.id} className="classes-item">
+            <img src={member.photo} alt={member.name} className="classes-photo" />
+            <div className="classes-name">{member.name}</div>
+          </div>
+        ))}
+      </div>
+      <h2 className='classes'>Gamma</h2>
+      <div className="classes-grid">
+        {gammaData.map((member) => (
+          <div key={member.id} className="classes-item">
+            <img src={member.photo} alt={member.name} className="classes-photo" />
+            <div className="classes-name">{member.name}</div>
+          </div>
+        ))}
+      </div>
+      <h2 className='classes'>Beta</h2>
+      <div className="classes-grid">
+        {betaData.map((member) => (
+          <div key={member.id} className="classes-item">
+            <img src={member.photo} alt={member.name} className="classes-photo" />
+            <div className="classes-name">{member.name}</div>
+          </div>
+        ))}
+      </div>
+      <h2 className='classes'>Alpha</h2>
+      <div className="classes-grid">
+        {alphaData.map((member) => (
+          <div key={member.id} className="classes-item">
+            <img src={member.photo} alt={member.name} className="classes-photo" />
+            <div className="classes-name">{member.name}</div>
+          </div>
+        ))}
+      </div>
+      <h2 className='classes'>Founding</h2>
+      <div className="classes-grid">
+        {foundingData.map((member) => (
           <div key={member.id} className="classes-item">
             <img src={member.photo} alt={member.name} className="classes-photo" />
             <div className="classes-name">{member.name}</div>
