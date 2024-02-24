@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './board.css'
 import ayaan from './members/ayaan.jpg'
 import byren from './members/byren.jpg'

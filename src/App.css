@@ -1,5 +1,9 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
   font-family: "Satoshi-Black";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,9 +11,10 @@ body {
   color: white;
 }
 
-code {
-  font-family: "Satoshi-Black";
+*, *:before, *:after {
+  box-sizing: inherit; /* Inherit box-sizing to make sure padding and borders are included in the element's total width and height */
 }
+
 
 .header-logo {
   height: 75px;
@@ -31,13 +36,17 @@ code {
 }
 
 .App {
-  text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-container {
-  width: 100vw;
-  /* Other styling as needed, but remove flexbox properties that could affect the header */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .centered-content {
@@ -45,7 +54,6 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Use viewport height to ensure it takes up minimum full screen height */
 }
 
 .sigma-eta-pi-center {
@@ -59,17 +67,12 @@ code {
   color: rgb(119, 69, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #000000;
   display: flex;
-  flex-direction: row; /* Changed from column to row */
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between; /* Ensures logo and text are on opposite ends */
+  justify-content: space-between;
   padding: 5px;
   font-size: calc(7px + 2vmin);
 }
@@ -84,10 +87,10 @@ code {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 50%; /* Start the dropdown in the middle of its parent */
-  transform: translateX(-50%); /* Move it back by half its own width */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #f9f9f9;
-  min-width: 160px; /* Adjust as needed */
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: center;
@@ -96,6 +99,7 @@ code {
 
 /* Links inside the dropdown */
 .dropdown-item {
+  font-size: 18pt;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
