@@ -23,5 +23,13 @@
   }
   
   .member-name {
-    margin-top: 10px; /* Space between the photo and the name */
+    font-family: "Satoshi-Light";
+    font-size: 18pt;
+    margin-top: 5px;
+  }
+
+  .member-position {
+    font-family: "Satoshi-Black";
+    font-size: 18pt;
+    margin-top: 5px;
   }
