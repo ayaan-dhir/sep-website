@@ -10,7 +10,7 @@ import FoundersEducation from './pages/founders_education';
 import Typewriter from "typewriter-effect";
 
 function App() {
-
+  
   return (
     <Router>
       <div className="App">
