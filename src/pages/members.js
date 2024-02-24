@@ -1,34 +1,34 @@
 import React from 'react';
 import './members.css'
-import pahel from './pahel.png'
-import ayaan from './ayaan.png'
-import ayaan2 from './ayaan2.png'
-import jai_hind from './jai_hind.png'
+// import ayaan from './members/ayaan.jpg'
+import byren from './members/byren.jpg'
+import danielyi from './members/daniel.jpg'
+import michelle from './members/michelle.jpg'
+import shreya from './members/shreya.jpg'
 
 const membersData = [
     {
       id: 1,
-      name: 'Pahel Srivastava',
-      photo: pahel
+      name: 'Shreya Mawandia',
+      photo: shreya
     },
     {
       id: 2,
-      name: 'AYD',
-      photo: ayaan
+      name: 'Byren Cheema',
+      photo: byren
     },
 
     {
       id: 3,
-      name: 'Tweaker',
-      photo: ayaan2
+      name: 'Daniel Yi',
+      photo: danielyi
     },
     
     {
       id: 4,
-      name: 'Jai Hind',
-      photo: jai_hind
+      name: 'Michelle Lei',
+      photo: michelle
     },
-    // Add more members as needed
   ];
 
 function Members() {
