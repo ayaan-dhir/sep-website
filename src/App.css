@@ -9,6 +9,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 *, *:before, *:after {
