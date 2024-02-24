@@ -6,7 +6,10 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
     gap: 200px; /*between photos left and right*/
     row-gap: 100px; /*between rows*/
-    padding: 100px 150px; /*top and bottom respectively*/
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
   }
   
   .board-item {
@@ -34,5 +37,5 @@
   }
 
   .board-title {
-    font-size: 48pt;
+    font-size: 56pt;
   }
