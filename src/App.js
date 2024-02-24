@@ -21,24 +21,25 @@ function App() {
           </div>
         </header>
 
-        {/* Routes for different pages */}
         <Routes>
-          {/* Define the root path which renders the main content */}
           <Route path="/" element={
             <div className="app-container">
-              <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-              <h1 className="typing-effect"><Typewriter
-                options={{
-                  strings: ["Build.", "Connect.", "Launch."],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 60,
-                  pauseFor: 1500,
-                }}
-              /></h1>
+              <div className="centered-content">
+                <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
+                <h1 className="typing-effect">
+                  <Typewriter
+                    options={{
+                      strings: ["Build.", "Connect.", "Launch."],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 60,
+                      pauseFor: 1500,
+                    }}
+                  />
+                </h1>
+              </div>
             </div>
           } />
-          {/* Other routes */}
           <Route path="/startups" element={<Startups />} />
           <Route path="/members" element={<Members />} />
           <Route path="/founders_education" element={<FoundersEducation />} />

@@ -11,10 +11,6 @@ code {
   font-family: "Satoshi-Black";
 }
 
-.App {
-  background-color: black;
-}
-
 .header-logo {
   height: 75px;
   width: auto;
@@ -34,25 +30,33 @@ code {
   color: white;
 }
 
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100vw;
+  /* Other styling as needed, but remove flexbox properties that could affect the header */
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height to ensure it takes up minimum full screen height */
+}
+
 .sigma-eta-pi-center {
-  color: #FFFFFF;
-  font-size: 100px;
-  font-family: "Satoshi-Black", sans-serif;
-  padding-top: 10%;
-  /* Include any other styles you want, such as font-weight, line-height, etc. */
+  font-size: 50pt;
+  margin: 0;
 }
 
 .typing-effect {
-  font-size: 40pt;
-  color: #F0544F;
-}
-
-.App {
-  text-align: center;
-  /* Ensure the .App fills the entire height and is a flex container */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-size: 25pt;
+  margin-bottom: 75px;
+  color: rgb(255, 111, 0);
 }
 
 .App-logo {
