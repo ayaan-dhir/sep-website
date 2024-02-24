@@ -1,5 +1,5 @@
 import React from 'react';
-import './members.css'
+import './board.css'
 import ayaan from './members/ayaan.jpg'
 import byren from './members/byren.jpg'
 import danielyi from './members/daniel.jpg'

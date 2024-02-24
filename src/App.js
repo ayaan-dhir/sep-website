@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logo from './white-logo.png';
 import './App.css';
 import './fonts.css';
-import Members from './pages/members';
+import Members from './pages/board';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
 import Typewriter from "typewriter-effect";
