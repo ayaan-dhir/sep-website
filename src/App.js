@@ -4,6 +4,7 @@ import logo from './white-logo.png';
 import './App.css';
 import './fonts.css';
 import Board from './pages/board';
+import Members from './pages/members';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/founders_education';
 import Typewriter from "typewriter-effect";
@@ -20,11 +21,11 @@ function App() {
             <div className="header-link dropdown">
               <div>Members</div> {/* Hover target */}
               <div className="dropdown-content"> {/* Dropdown content */}
-                <Link to="/members/board" className="dropdown-item">Board</Link>
-                <Link to="/members/startups" className="dropdown-item">Members</Link>
+                <Link to="board" className="dropdown-item">Board</Link>
+                <Link to="members" className="dropdown-item">Members</Link>
               </div>
             </div>
-            <Link to="/founders_education" className="header-link">Founder's Education</Link>
+            <Link to="founders_education" className="header-link">Founder's Education</Link>
           </div>
         </header>
 
@@ -50,8 +51,8 @@ function App() {
           <Route path="/startups" element={<Startups />} />
           {/* Update the paths as necessary */}
           <Route path="board" element={<Board />} />
-          <Route path="/members/startups" element={<Startups />} />
-          <Route path="/members/founders_education" element={<FoundersEducation />} />
+          <Route path="members" element={<Members />} />
+          <Route path="founders_education" element={<FoundersEducation />} />
         </Routes>
       </div>
     </Router>
