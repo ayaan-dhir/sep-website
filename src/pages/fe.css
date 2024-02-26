@@ -100,12 +100,13 @@
     text-align: left; /* Align the text to the left */
     width: 80%; /* Adjust based on your design */
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .fe-photo img {
     width: 450px; /* Smaller width */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 30px; /* Adds some space between the image and the text */
+    margin-right: 40px; /* Adds some space between the image and the text */
     border-radius: 20px;
 }
 

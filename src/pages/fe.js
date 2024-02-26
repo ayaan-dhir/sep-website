@@ -45,7 +45,7 @@ function FoundersEducation() {
             <p>"Hi everyone! My name is Ayaan and I focus on building startups through our Founder's Education, our program designed to help you chase after your entrepreneurial endeavors.
               Beyond our curriculum, our program is heavily focused on collaboration and community as you get to build alongside your cohort. What makes FE so special is that it caters to all experience levels. 
               We have had members come in with no experience who later go on to pursue entrepreneurship full-time and we also have members who have started ventures before joining who find their co-founders for their next startup.
-              I highly encourage people to come to Sigma Eta Pi if you are curious about entrepreneurship and want to have a lasting impact on your community. FE is the place where innovators at UCI come to build!"
+              FE is the place where innovators at UCI come to build!"
             </p>
           </div>
         </div>
