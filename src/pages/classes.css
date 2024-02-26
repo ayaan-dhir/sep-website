@@ -18,6 +18,7 @@
   .classes-photo {
     width: 300px; /* Adjust width as needed */
     height: 400px; /* Adjust height as needed */
+    border-radius: 20px;
     object-fit: cover; /* Ensures photos cover the area well */
   }
   

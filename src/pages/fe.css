@@ -82,3 +82,36 @@
     font-size: 25px;
     color: #F06141; /* Makes the text color white or any color that suits your design */
 }
+
+.fe-note-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh; /* Adjust height based on content */
+    text-align: center;
+}
+
+.fe-content-wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: left; /* Align the text to the left */
+    width: 80%; /* Adjust based on your design */
+    margin-top: 25px;
+}
+
+.fe-photo img {
+    width: 450px; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Adds some space between the image and the text */
+    border-radius: 20px;
+}
+
+.fe-text {
+    flex: 1; /* Allows the text div to fill the remaining space */
+    font-size: 22pt;
+    color: #F06141;
+}
+
