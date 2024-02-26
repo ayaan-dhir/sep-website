@@ -109,7 +109,10 @@ html, body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-item:hover {background-color: #F06141;}
+.dropdown-item:hover {
+  background-color: #F06141;
+  color: white;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {

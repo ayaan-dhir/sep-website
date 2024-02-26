@@ -1,3 +1,15 @@
+.scroll-container {
+    /* Enables vertical scrolling */
+    overflow-y: scroll;
+  
+    /* Sets the height to the viewport height or any specific height */
+    height: 100vh;
+  
+    /* Required to enable scroll snapping */
+    scroll-snap-type: y mandatory;
+  }
+  
+
 .fe-page {
     display: flex;
     flex-direction: column;
@@ -5,6 +17,7 @@
     align-items: center;
     height: 75vh;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 .fe-center-text {
@@ -17,26 +30,29 @@
     font-size: 25pt;
     margin-top: 5px;
     color: #F06141;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-.fe-page2 {
+.fe-pages {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     height: 100vh;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 .headings {
     font-size: 50pt;
+    margin-bottom: 0;
 }
 
 .curriculum-container {
-    width: 100%; /* Set to the width you prefer, or 100% to take full width */
+    padding-top: 10px;
+    width: 80%; /* Set to the width you prefer, or 100% to take full width */
     margin: 0 auto; /* This will center your grid horizontally */
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .curriculum-grid {
