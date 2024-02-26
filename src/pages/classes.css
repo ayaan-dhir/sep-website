@@ -1,14 +1,15 @@
 /* classes.css */
 
 .classes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
-    gap: 200px;
-    row-gap: 100px;
-    column-gap: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    justify-content: center;
+  grid-gap: 200px;
+  column-gap: 100px;
+  display: grid;
+  gap: 200px;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  row-gap: 100px;
   }
   
   .classes-item {
