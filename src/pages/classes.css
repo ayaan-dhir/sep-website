@@ -1,15 +1,12 @@
 /* classes.css */
 
 .classes-grid {
-  grid-gap: 200px;
-  column-gap: 100px;
   display: grid;
-  gap: 200px;
-  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
+  gap: 200px; /*between photos left and right*/
+  row-gap: 100px; /*between rows*/
   padding-left: 100px;
   padding-right: 100px;
-  row-gap: 100px;
   }
   
   .classes-item {
