@@ -1,0 +1,68 @@
+.fe-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+}
+
+.fe-center-text {
+    font-size: 50pt;
+    margin-bottom: 0;
+    margin-top: 75px;
+}
+
+.fe-subtext {
+    font-size: 25pt;
+    margin-top: 5px;
+    color: #F06141;
+}
+
+.fe-page2 {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh;
+    text-align: center;
+}
+
+.headings {
+    font-size: 50pt;
+}
+
+.curriculum-container {
+    width: 100%; /* Set to the width you prefer, or 100% to take full width */
+    margin: 0 auto; /* This will center your grid horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min-width to your preference */
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: start; /* Add this if you want all items to align at their top edge */
+}
+
+.curriculum-item {
+    background-color: black;
+    border-radius: 10px;
+    border: 4px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+
+.title {
+    font-size: 25px;
+    color: #F06141; /* Makes the text color white or any color that suits your design */
+}

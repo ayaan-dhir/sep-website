@@ -5,8 +5,10 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates a responsive grid */
     gap: 200px;
     row-gap: 100px;
+    column-gap: 100px;
     padding-left: 100px;
     padding-right: 100px;
+    justify-content: center;
   }
   
   .classes-item {

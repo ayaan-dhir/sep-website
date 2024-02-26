@@ -6,7 +6,7 @@ import './fonts.css';
 import Board from './pages/board';
 import Classes from './pages/classes';
 import Startups from './pages/startups';
-import FoundersEducation from './pages/founders_education';
+import FoundersEducation from './pages/fe';
 import Typewriter from "typewriter-effect";
 
 function App() {
