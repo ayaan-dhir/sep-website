@@ -1,58 +1,28 @@
+/* startups.css */
+
 .startup-page {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: hidden; /* Hide slides that are out of view */
-  }
-  
-  .carousel-container {
-    display: flex;
-    width: 100%;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    min-width: 100%;
-    display: flex;
-    align-items: center; /* Center items vertically */
-    box-sizing: border-box;
-    padding: 150px;
-  }
-  
-  .startup-image {
-    width: 30%;
-    height: auto;
-  }
-  
-  .startup-text {
-    padding-left: 350px;
-    font-size: 50pt;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 100;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  font-size: 24pt;
+  text-align: center;
+}
+
+.imgslider img {
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 70vh;
+  height: auto;
+  margin: auto;
+}
+
+.imgslider {
+  width: 80%; /* Or a specific width */
+  /* Ensure the container can grow to fit content, if necessary */
+  min-height: 50vh;
+}

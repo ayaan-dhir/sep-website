@@ -1,41 +1,56 @@
-import React, { useState } from 'react';
-import './startups.css';
-import bookit from "./logos/bookit.png";
-import vango from "./logos/vango.png";
+import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; // These imports assume your setup supports CSS imports in JS
+import "slick-carousel/slick/slick-theme.css";
 
-function Startups() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    { type: 'image', src: bookit, alt: 'BookIt', content: 'BookIt' },
-    { type: 'image', src: vango, alt: 'Vango.AI', content: 'Vango.AI' },
-  ];
+import './startups.css'
 
-  const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
+import bookit from './logos/bookit.png'
+import vango from './logos/vango.png'
 
-  const goToPrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
-  };
+// Images data
+const images = [
+    { id: 1, src: bookit, alt: "Image 1" },
+    { id: 2, src: vango, alt: "heloooooo" },
+];
 
-  const renderSlide = (slide, index) => (
-    <div className={`slide ${index === currentSlide ? 'active' : ''}`}>
-      <img src={slide.src} alt={slide.alt} className="startup-image" />
-      <div className="startup-text">{slide.content}</div>
-    </div>
-  );
+// ImageSlider component
+const ImageSlider = ({ images }) => {
+    const settings = {
+        infinite: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        lazyLoad: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
 
-  return (
-    <div className='startup-page'>
-      <div className='carousel-container'>
-        <div className='carousel-inner' style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-          {slides.map(renderSlide)}
+    return (
+        <>
+            <div className="tag">
+                <h1>Our Startups</h1>
+            </div>
+            <div className="imgslider">
+                <Slider {...settings}>
+                    {images.map((item) => (
+                        <div key={item.id}>
+                            <img src={item.src} alt={item.alt} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+        </>
+    );
+};
+
+// App component
+const Startups = () => {
+    return (
+        <div className="startup-page">
+            <ImageSlider images={images} />
         </div>
-      </div>
-      <button className='prev' onClick={goToPrevSlide}>&#10094;</button>
-      <button className='next' onClick={goToNextSlide}>&#10095;</button>
-    </div>
-  );
-}
+    );
+};
 
 export default Startups;
