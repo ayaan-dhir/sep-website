@@ -22,7 +22,6 @@
 }
 
 .imgslider {
-  width: 80%; /* Or a specific width */
-  /* Ensure the container can grow to fit content, if necessary */
+  width: 80%;
   min-height: 50vh;
 }
