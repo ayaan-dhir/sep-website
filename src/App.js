@@ -7,6 +7,7 @@ import Board from './pages/board';
 import Classes from './pages/classes';
 import Startups from './pages/startups';
 import FoundersEducation from './pages/fe';
+import Recruitment from "./pages/recruitment";
 import Typewriter from "typewriter-effect";
 
 function App() {
@@ -15,44 +16,62 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <Link to="/"><img src={logo} className="header-logo" alt="logo" /></Link>
+          <Link to="/">
+            <img src={logo} className="header-logo" alt="logo" />
+          </Link>
           <div className="header-text">
-            <Link to="/startups" className="header-link">Startups</Link>
+            <Link to="startups" className="header-link">
+              Startups
+            </Link>
             <div className="header-link dropdown">
               <div>Members</div> {/* Hover target */}
-              <div className="dropdown-content"> {/* Dropdown content */}
-                <Link to="board" className="dropdown-item">Board</Link>
-                <Link to="classes" className="dropdown-item">Classes</Link>
+              <div className="dropdown-content">
+                {" "}
+                {/* Dropdown content */}
+                <Link to="board" className="dropdown-item">
+                  Board
+                </Link>
+                <Link to="classes" className="dropdown-item">
+                  Classes
+                </Link>
               </div>
             </div>
-            <Link to="founders_education" className="header-link">Founder's Education</Link>
+            <Link to="founders_education" className="header-link">
+              Founder's Education
+            </Link>
+            <Link to="recruitment" className="header-link">
+              Recruitment
+            </Link>
           </div>
         </header>
 
         <Routes>
-          <Route path="/" element={
-            <div className="app-container">
-              <div className="centered-content">
-                <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
-                <h1 className="typing-effect">
-                  <Typewriter
-                    options={{
-                      strings: ["Build.", "Connect.", "Launch."],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 60,
-                      pauseFor: 1500,
-                    }}
-                  />
-                </h1>
+          <Route
+            path="/"
+            element={
+              <div className="app-container">
+                <div className="centered-content">
+                  <h1 className="sigma-eta-pi-center">Sigma Eta Pi</h1>
+                  <h1 className="typing-effect">
+                    <Typewriter
+                      options={{
+                        strings: ["Build.", "Connect.", "Launch."],
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 60,
+                        pauseFor: 1500,
+                      }}
+                    />
+                  </h1>
+                </div>
               </div>
-            </div>
-          } />
-          <Route path="/startups" element={<Startups />} />
-          {/* Update the paths as necessary */}
+            }
+          />
+          <Route path="startups" element={<Startups />} />
           <Route path="board" element={<Board />} />
           <Route path="classes" element={<Classes />} />
           <Route path="founders_education" element={<FoundersEducation />} />
+          <Route path="recruitment" element={<Recruitment />} />
         </Routes>
       </div>
     </Router>
