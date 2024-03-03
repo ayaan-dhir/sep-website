@@ -6,7 +6,7 @@ function Recruitment() {
     <div>
       <div className="fe-page">
         <h1 className="fe-center-text">Recruitment</h1>
-        <p className="fe-subtext">Spring 2024...Coming Soon!</p>
+        <a className="fe-subtext" href="https://forms.gle/CR1X7KaCdtPQL5kj6">Spring 2024 Interest Form</a>
       </div>
     </div>
   );
