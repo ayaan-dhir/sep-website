@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -12,10 +13,11 @@ html, body {
   text-align: center;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; /* Inherit box-sizing to make sure padding and borders are included in the element's total width and height */
 }
-
 
 .header-logo {
   height: 75px;
@@ -48,7 +50,6 @@ html, body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-top: 85px;
 }
 
 .centered-content {
@@ -65,8 +66,7 @@ html, body {
 
 .typing-effect {
   font-size: 25pt;
-  margin-bottom: 75px;
-  color: #F06141;
+  color: #f06141;
 }
 
 .App-header {
@@ -92,11 +92,10 @@ html, body {
   transform: translateX(-50%);
   background-color: #ffffff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;
 }
-
 
 /* Links inside the dropdown */
 .dropdown-item {
@@ -109,7 +108,7 @@ html, body {
 
 /* Change color of dropdown links on hover */
 .dropdown-item:hover {
-  background-color: #F06141;
+  background-color: #f06141;
   color: white;
 }
 

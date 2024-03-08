@@ -3,53 +3,52 @@ import './board.css'
 import ayaan from './members/board/ayaan.jpg'
 import byren from './members/board/byren.jpg'
 import danielyi from './members/board/daniel.jpg'
-import michelle from './members/board/michelle.jpg'
+import jessicahu from "./members/epsilon/jessicahu.JPG";
 import shreya from './members/board/shreya.jpg'
 import rithwik from './members/board/rithwik.jpg'
 
 const membersData = [
-    {
-      id: 1,
-      position: 'President',
-      name: 'Shreya Mawandia',
-      photo: shreya
-    },
-    {
-      id: 2,
-      position: 'VP of External Affairs',
-      name: 'Byren Cheema',
-      photo: byren
-    },
+  {
+    id: 1,
+    position: "President",
+    name: "Shreya Mawandia",
+    photo: shreya,
+  },
+  {
+    id: 2,
+    position: "VP of External Affairs",
+    name: "Byren Cheema",
+    photo: byren,
+  },
 
-    {
-      id: 3,
-      position: 'VP of Internal Affairs',
-      name: 'Daniel Yi',
-      photo: danielyi
-    },
-    
-    {
-      id: 4,
-      position: 'VP of Marketing',
-      name: 'Michelle Lei',
-      photo: michelle
-    },
+  {
+    id: 3,
+    position: "VP of Internal Affairs",
+    name: "Daniel Yi",
+    photo: danielyi,
+  },
 
-    {
-      id: 5,
-      position: 'VP of Finance',
-      name: 'Rithwik Kerur',
-      photo: rithwik
-    },
+  {
+    id: 4,
+    position: "VP of Technology/Communications",
+    name: "Jessica Hu",
+    photo: jessicahu,
+  },
 
-    {
-      id: 6,
-      position: 'VP of Founder\'s Education',
-      name: 'Ayaan Dhir',
-      photo: ayaan
-    },
+  {
+    id: 5,
+    position: "VP of Finance",
+    name: "Rithwik Kerur",
+    photo: rithwik,
+  },
 
-  ];
+  {
+    id: 6,
+    position: "VP of Founder's Education",
+    name: "Ayaan Dhir",
+    photo: ayaan,
+  },
+];
 
 function Members() {
   return (
